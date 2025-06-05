@@ -1,0 +1,244 @@
+@import url(normalize.css);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+
+    min-height: fit-content;
+    height: 100dvh;
+}
+
+h1,
+h1 a{
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    h1,
+    h1 a {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1,
+    h1 a {
+        font-size: 7rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    margin: 0 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+}
+
+.interact {
+    transition: all 0.2s;
+}
+
+.interact:hover,
+.interact:focus {
+    transform: scale(1.05);
+}
+
+/* Header */
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNav__links {
+    display: inherit;
+    padding: 0;
+}
+
+.headerNav__link {
+    font-weight: 600;
+}
+
+/* Footer */
+.footerNav__links {
+    display: flex;
+    padding: 0; /* Look into this duplication */
+    justify-self: center;
+}
+
+.footerNav__link {
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+#linkedin:hover,
+#linkedin:focus {
+    color: dodgerblue;
+}
+
+#github:hover,
+#github:focus {
+    color: tomato;
+}
+
+#email:hover,
+#email:focus {
+    color: blue;
+}
+
+#instagram:hover,
+#instagram:focus {
+    color: pink;
+}
+
+/* Hero */
+.hero {
+    flex-grow: 1;
+
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__header {
+    position: relative;
+}
+
+#hero__emoji {
+    width: 3rem;
+    position: absolute;
+    margin-left: 1rem;
+    top: 0.5rem;
+}
+
+#codeDayImage {
+    width: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    #hero__emoji {
+        width: 5rem;
+    }
+
+    #codeDayImage {
+        width: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #hero__emoji {
+        width: 7rem;
+    }
+
+    #codeDayImage {
+        width: 5rem;
+    }
+}
+
+/* Projects */
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.project {
+    margin: 2rem;
+}
+
+.project__header {
+    font-size: 2rem;
+}
+
+.project__image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project__description {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+
+    .project__header {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project__header {
+        font-size: 4rem;
+    }
+}
+
+/* About */
+.about__header {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.aboutMe__description {
+    font-size: 1.5rem;
+}
+
+.about__image {
+    justify-self: center;
+    width: 300px;
+    overflow: clip;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.icons {
+    padding: 0;
+}
+
+.icon {
+    display: inline-block;
+    margin: 0 2rem;
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 764px) {
+    .about__header {
+        font-size: 3rem;
+    }
+    .aboutMe__content {
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about__header {
+        font-size: 5rem;
+    }
+
+    .about__image {
+        width: 500px;
+    }
+}
