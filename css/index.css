@@ -1,0 +1,106 @@
+@import url(normalize.css);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+
+    min-height: fit-content;
+    height: 100dvh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 7rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    margin: 0 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* Header */
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNav__links {
+    display: inherit;
+    padding: 0;
+}
+
+/* Footer */
+
+.footerNav__link {
+    transition: all 0.5s;
+}
+
+.footerNav__link:hover {
+    transform: scale(1.2); /* TODO: Not working atm, check it out */
+}
+
+.footerNav__links {
+    display: flex;
+    padding: 0; /* Look into this duplication */
+    justify-self: center;
+}
+
+#linkedin:hover,
+#linkedin:focus {
+    color: dodgerblue;
+}
+
+#github:hover,
+#github:focus {
+    color: tomato;
+}
+
+#email:hover,
+#email:focus {
+    color: blue;
+}
+
+#instagram:hover,
+#instagram:focus {
+    color: pink;
+}
+
+/* Hero */
+.hero {
+    flex-grow: 1;
+
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+}
