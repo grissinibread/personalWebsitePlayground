@@ -201,6 +201,7 @@ ul {
 .about__header {
     font-size: 2rem;
     margin: 0;
+    margin-top: 2rem;
 }
 
 .aboutMe__description {
@@ -209,7 +210,7 @@ ul {
 
 .about__image {
     justify-self: center;
-    width: 300px;
+    width: 250px;
     overflow: clip;
     clip-path: circle(50% at 50% 50%);
 }
@@ -228,8 +229,18 @@ ul {
     .about__header {
         font-size: 3rem;
     }
+
+    .aboutMe__section {
+        height: fit-content;
+        align-self: center;
+    }
+
     .aboutMe__content {
         order: 1;
+    }
+
+    .about__image {
+        width: 300px;
     }
 }
 
@@ -239,6 +250,20 @@ ul {
     }
 
     .about__image {
-        width: 500px;
+        width: 350px;
     }
+}
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.section {
+    padding: 2rem;
+}
+
+.technologies__list {
+    margin-top: 2rem;
 }
