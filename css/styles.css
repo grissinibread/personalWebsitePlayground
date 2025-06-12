@@ -168,6 +168,10 @@ ul {
 }
 
 .project__header {
+    font-size: 3rem;
+}
+
+.project__techHeader {
     font-size: 2rem;
 }
 
@@ -195,13 +199,16 @@ ul {
     .project__header {
         font-size: 4rem;
     }
+
+    .project__techHeader {
+        font-size: 3rem;
+    }
 }
 
 /* About */
 .about__header {
     font-size: 2rem;
     margin: 0;
-    margin-top: 2rem;
 }
 
 .aboutMe__description {
@@ -217,13 +224,14 @@ ul {
 }
 
 .icons {
-    padding: 0;
+    padding-top: 4rem;
+    padding-left: 0;
 }
 
 .icon {
     display: inline-block;
-    margin: 0 2rem;
-    font-size: 4rem;
+    margin: auto 3rem;
+    font-size: 6rem;
 }
 
 @media screen and (min-width: 764px) {
