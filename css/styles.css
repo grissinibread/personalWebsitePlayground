@@ -19,7 +19,10 @@ body {
 
     min-height: fit-content;
     height: 100dvh;
+
+    background: linear-gradient(aliceblue, aquamarine);
 }
+
 
 h1,
 h1 a{
@@ -88,7 +91,7 @@ ul {
 }
 
 .footerNav__link {
-    transition: all 0.5s;
+    transition: all 0.4s;
     font-weight: 600;
 }
 
@@ -184,6 +187,10 @@ ul {
     font-size: 2rem;
 }
 
+.projects__icon {
+    font-size: 4rem;
+}
+
 @media screen and (min-width: 768px) {
     .grid {
         display: grid;
@@ -224,13 +231,15 @@ ul {
 }
 
 .icons {
-    padding-top: 4rem;
     padding-left: 0;
 }
 
 .icon {
     display: inline-block;
     margin: auto 3rem;
+}
+
+.about__icon {
     font-size: 6rem;
 }
 
