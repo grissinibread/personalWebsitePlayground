@@ -5,6 +5,8 @@
   <meta name="description" content="Hey! I'm Alejandro, a software engineer who's always learning new technologies/languages, smart solutions, and building fun projects. Check out my work!"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="css/styles.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Alejandro Navarro</title>
 </head>
 
@@ -19,7 +21,7 @@
     </nav>
   </header>
 
-  <main class="hero">
+  <main class="hero" data-aos="zoom-in">
     <h1 class="hero__header">hello! I'm alejandro <img id="hero__emoji" src="images/nerdFace.svg" alt="nerd emoji">
       <br>
       a software engineer
@@ -35,7 +37,8 @@
     </h1>
   </main>
 
-  <footer>
+  <footer data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
     <nav>
       <ul class="footerNav__links">
         <li class="footerNav__link interact"><a id="linkedin" target="_blank" href="https://www.linkedin.com/in/alejandro-navarro-profile">linkedin</a></li>
@@ -45,5 +48,8 @@
       </ul>
     </nav>
   </footer>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

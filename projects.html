@@ -3,6 +3,8 @@
 <head>
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link href="css/styles.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -20,8 +22,8 @@
 
   <h1 class="title">Projects</h1>
 
-  <section class="projects grid">
-    <article class="project interact">
+  <section class="projects grid" data-aos="fade-up">
+    <article class="project" data-aos="fade-up">
       <h2 class="project__header">Study Buddy</h2>
       <img class="project__image" src="images/studyBuddy.png" alt="study buddy gui image"/>
       <p class="project__description">Developing a social media-inspired study app that allows students to connect with classmates, form study groups, and collaborate on coursework. The app includes or will include features such as user profiles, group creation, real-time messaging, and shared resource libraries. I'm using technologies like Java, Spring Boot, and MongoDB to build both the backend and messaging system. This project reflects my interest in building full-stack applications that solve real problems for students like myself.</p>
@@ -32,7 +34,7 @@
         <li class="icon projects__icon"><i class="devicon-mongodb-plain"></i></li>
       </ul>
     </article>
-    <article class="project interact">
+    <article class="project" data-aos="fade-up">
       <h2 class="project__header">Portfolio Website</h2>
       <img class="project__image" src="images/personalPortfolio.png" alt="placeholder image"/>
       <p class="project__description">Built a responsive personal portfolio website to showcase my projects, skills, and experience as a Software Engineering student. This project helped me strengthen my understanding of front-end technologies including HTML, CSS, and JavaScript. I plan to expand on it by integrating TypeScript and exploring deployment options. The website serves as a dynamic platform to demonstrate my growth and future work in software development.</p>
@@ -42,10 +44,13 @@
         <li class="icon projects__icon"><i class="devicon-css3-plain"></i></li>
       </ul>
     </article>
-    <article class="project interact">
+    <article class="project" data-aos="fade-up">
       <h2 class="project__header">Dancing Robot</h2>
       <p class="project__description">Developed an expressive robot capable of dancing and conveying emotions through synchronized movements and animated LED facial expressions. Leveraged SPI and serial communication on an STM32 Nucleo board to control 8x8 LED matrices representing eyes and mouth, as well as motor functions for movement. Integrated motor control logic in C and manually soldered components and circuitry. Focused on creating responsive, personality-driven robot behaviors like "happy," "mad," and "sad" using motor direction and LED animations.</p>
     </article>
   </section>
 </body>
+<script>
+  AOS.init();
+</script>
 </html>
